@@ -3,7 +3,6 @@ bcrypt
 coreapi
 coreschema
 cryptography
-dbus-python
 debugpy
 decorator
 defer
