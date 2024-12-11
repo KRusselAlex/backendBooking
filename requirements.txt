@@ -23,8 +23,6 @@ coreschema==0.0.4
 cryptography==3.4.8
 debugpy==1.8.1
 decorator==5.1.1
-deepface==0.0.93
-defer==1.0.6
 defusedxml==0.7.1
 distlib==0.3.8
 distro==1.7.0
