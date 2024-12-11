@@ -1,5 +1,6 @@
 accelerate
 bcrypt
+libsystemd
 coreapi
 coreschema
 cryptography
@@ -9,6 +10,7 @@ decorator
 Django
 django-cors-headers
 django-rest-swagger
+djangorestframework
 djangorestframework
 djongo
 dnspython
