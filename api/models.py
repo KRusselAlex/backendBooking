@@ -20,6 +20,7 @@ class UserModel(AbstractUser):
     
 class HotelModel (models.Model):
     titre = models.CharField(max_length=100,default=None, blank=True, null=True)
+    country = models.CharField(max_length=100,default=None, blank=True, null=True)
     titre_fon =  models.CharField(max_length=100,default=None, blank=True, null=True)
     description = models.CharField(max_length=500,default=None, blank=True, null=True)
     description_fon = models.CharField(max_length=500,default=None, blank=True, null=True)
@@ -33,7 +34,6 @@ class PayementModel(models.Model):
     payementMethod = models.CharField(max_length=50)
 
 
-
 class RoomsModel(models.Model):
     hotelID = models.CharField(max_length=1000,default=None)
     title = models.CharField(max_length=1000,default=None)
@@ -42,10 +42,9 @@ class RoomsModel(models.Model):
     audio = models.CharField(max_length=1000,default=None, blank=True, null=True)
     content = models.CharField(max_length=1000,default=None, blank=True, null=True)
     content_fon = models.CharField(max_length=1000,default=None, blank=True, null=True)
+    price = models.DecimalField(max_digits=10000000000, decimal_places= 2,default=None, blank=True, null=True)
 
     
     
     
     
-
-
