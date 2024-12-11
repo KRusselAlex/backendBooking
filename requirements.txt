@@ -144,8 +144,6 @@ triton==3.1.0
 types-python-dateutil==2.9.0.20241003
 typing_extensions==4.12.2
 tzdata==2024.2
-ubuntu-drivers-common==0.0.0
-ubuntu-pro-client==8001
 ufw==0.36.1
 unattended-upgrades==0.1
 uritemplate==4.1.1
