@@ -338,51 +338,7 @@ class Rooms(generics.GenericAPIView):
         else:
             return Response(status=status.HTTP_404_NOT_FOUND)
         
-    # def post(self,request):
-    #     datas = request.data
-    #     text = datas["content"]
-    #     title_f = datas["title"]
-        
-    #     try:
-            
-    #         content_f =  requests.post("https://api-ai-fon-translate.vercel.app/create_fon",json = {"texts":text} )
-    #         title_f =  requests.post("https://api-ai-fon-translate.vercel.app/create_fon",json = {"texts":title_f} )     
-    #         translated_content_json = content_f.json()
-    #         translated_titre_json = title_f.json()
-    #         data4 = translated_content_json["data"]
-            
-        
-    #         inputs = tokenizer(data4, return_tensors="pt")
-    #         with torch.no_grad():
-    #             output = model(**inputs).waveform
-        
-    #         output = output.cpu()
-    #         data_np = output.numpy()
-    #         data_np_squeezed = np.squeeze(data_np)
-    #         wav_path = 'static/audio/' + datas['title'] + '.wav'
-    #         scipy.io.wavfile.write(wav_path, rate=model.config.sampling_rate, data=data_np_squeezed)
-    #         mp3_path = 'static/audio/' + datas['title'] + '.mp3'  
-    #         sound = AudioSegment.from_wav(wav_path)
-    #         sound.export (mp3_path, format="mp3")
-    #         datas["audio"]= mp3_path
-    #         print(mp3_path)
-            
-    #     except:
-    #         return Response({"error":"api ai error"},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-        
-    #     datas["title_fon"] = translated_titre_json["data"]
-    #     datas["content_fon"] = translated_content_json["data"]
-            
-    
-    #     serializer = RoomsSerializer(data = datas)
-    #     if serializer.is_valid():
-    #         try:
-    #             serializer.save()
-    #             return Response(serializer.data,status.HTTP_201_CREATED)
-    #         except:
-    #             return Response({},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-    #     return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
-    
+   
 class Room(generics.GenericAPIView):
     def get(self,request, pk):
         content  = get_object_or_404(RoomsModel, pk=pk)
