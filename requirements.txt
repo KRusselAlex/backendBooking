@@ -28,7 +28,6 @@ drf-spectacular==0.27.2
 exceptiongroup==1.2.1
 executing==2.0.1
 fastjsonschema==2.19.1
-ffmpeg-downloader==0.3.0
 filelock==3.16.1
 Flask==3.0.3
 Flask-Bcrypt==1.0.1
