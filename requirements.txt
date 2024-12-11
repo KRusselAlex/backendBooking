@@ -96,11 +96,6 @@ protobuf==4.25.4
 psutil==5.9.8
 ptyprocess==0.7.0
 pure-eval==0.2.2
-pycairo==1.20.1
-pycparser==2.22
-pycups==2.0.1
-pydub==0.25.1
-Pygments==2.18.0
 PyJWT==1.7.1
 pymacaroons==0.13.0
 pymongo==3.12.1
