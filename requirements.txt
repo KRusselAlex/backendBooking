@@ -20,7 +20,6 @@ dbus-python==1.2.18
 debugpy==1.8.7
 decorator==5.1.1
 distro==1.7.0
-distro-info==1.1+ubuntu0.2
 Django==4.1.13
 django-cors-headers==4.4.0
 django-rest-swagger==2.2.0
